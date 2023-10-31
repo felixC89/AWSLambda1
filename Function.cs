@@ -28,7 +28,7 @@ namespace AWSLambda1
             catch (Exception e) 
             {
                 response.ErrorCode = -1;
-                response.ErrorMessage = $"Ocurrió un error {e.Message}";
+                response.ErrorMessage = $"Ocurrió un error al correr la funcion lambda: {e.Message}";
             }
 
             return response;
