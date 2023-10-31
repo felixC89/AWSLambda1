@@ -23,7 +23,7 @@ namespace AWSLambda1
             try
             {
                 response.ErrorCode = 0;
-                response.ErrorMessage = $"Hola {input.key1} {input.key2} {input.key3} {input.key4}, version:{context.FunctionVersion}";
+                response.ErrorMessage = $"Hola {input.key1} {input.key2} {input.key3} {input.key4}, FunctionName: {context.FunctionName}";
             }
             catch (Exception e) 
             {
